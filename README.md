@@ -1,2 +1,25 @@
 # sqlc-goose-fun
 Playing with goose/sqlc/postgres/go
+
+# Install
+
+## goose
+
+```bash
+go install github.com/pressly/goose/v3@latest
+```
+
+why not `go get`?
+
+`go get github.com/pressly/goose/v3`
+go: go.mod file not found in current directory or any parent directory.
+	'go get' is no longer supported outside a module.
+	To build and install a command, use 'go install' with a version,
+	like 'go install example.com/cmd@latest'
+	For more information, see https://golang.org/doc/go-get-install-deprecation
+	or run 'go help get' or 'go help install'.
+
+`go install github.com/pressly/goose/v3`
+go: 'go install' requires a version when current directory is not in a module
+	Try 'go install github.com/pressly/goose/v3@latest' to install the latest version
+
