@@ -23,3 +23,10 @@ go: go.mod file not found in current directory or any parent directory.
 go: 'go install' requires a version when current directory is not in a module
 	Try 'go install github.com/pressly/goose/v3@latest' to install the latest version
 
+## sqlc
+
+> sqlc `github.com/sqlc-dev/sqlc v1.27.0` uses `github.com/google/uuid v1.6.0`
+
+```bash
+go install github.com/sqlc-dev/sqlc/cmd/sqlc@latest
+```
