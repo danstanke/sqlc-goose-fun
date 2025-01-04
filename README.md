@@ -3,13 +3,24 @@ Playing with goose/sqlc/postgres/go
 
 # Install
 
-## goose
+## `goose`
 
-```bash
-go install github.com/pressly/goose/v3@latest
+```shell
+go install github.com/pressly/goose/v3/cmd/goose@latest
 ```
 
-why not `go get`?
+### usage 
+
+```shell
+goose -dir ./migrations create create_database sql
+```
+
+for project:
+```shell
+go get github.com/pressly/goose/v3
+```
+
+### why not `go get`?
 
 `go get github.com/pressly/goose/v3`
 go: go.mod file not found in current directory or any parent directory.
@@ -23,10 +34,10 @@ go: go.mod file not found in current directory or any parent directory.
 go: 'go install' requires a version when current directory is not in a module
 	Try 'go install github.com/pressly/goose/v3@latest' to install the latest version
 
-## sqlc
+## `sqlc`
 
 > sqlc `github.com/sqlc-dev/sqlc v1.27.0` uses `github.com/google/uuid v1.6.0`
 
-```bash
+```shell
 go install github.com/sqlc-dev/sqlc/cmd/sqlc@latest
 ```
