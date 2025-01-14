@@ -1,0 +1,47 @@
+openapi: 3.0.3
+info:
+  title: Health Check API
+  version: 1.0.0
+paths:
+  /health:
+    get:
+      summary: General health check
+      responses:
+        '200':
+          description: Service is running
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: healthy
+  /system/health:
+    get:
+      summary: System health check
+      responses:
+        '200':
+          description: System is operational
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: healthy
+  /application/health:
+    get:
+      summary: Application health check
+      responses:
+        '200':
+          description: Application is healthy
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: healthy
